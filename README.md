@@ -42,7 +42,7 @@ robot-simulator/
 
 Installation
 1. Clone the repository:
-git clone https://github.com/charlieKsw/robot-simulator.git
+git clone https://github.com/charlieKsw/robot-simulator-reactjs.git
 
 2. Navigate to the project directory:
 cd robot-simulator

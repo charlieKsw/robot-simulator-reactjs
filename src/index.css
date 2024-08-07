@@ -1,13 +1,91 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+    font-size: 40px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.App-header {
+    background-color: #282c34;
+    color: white;
+    min-width: fit-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .App-header {
+        padding: 10px;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+.coordinate-img {
+    width: 80px;
+    height: 80px;
+}
+
+.direction-container {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direction-img {
+    background-color: pink;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+}
+
+.button-groups {
+    margin: 20px;
+}
+
+.button-groups button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #5bc0de;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.button-groups button:hover {
+    background-color: #31b0d5;
 }

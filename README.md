@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+Robot Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
+The Robot Simulator is a simple React application that simulates a robot's movement on a 5x5 grid. The robot can move forward and rotate left or right. The current direction and coordinates of the robot are displayed, and the robot's movements can be controlled via buttons or arrow keys.
 
-## Available Scripts
+Features
+- Move Forward: The robot moves one step forward in the direction it is currently facing.
+- Rotate Left/Right: The robot rotates 90 degrees to the left or right.
+- Keyboard Controls: Use arrow keys to change the robot's direction and move it forward.
+- Animated Transitions: Smooth animations for the robot's movement and direction changes.
 
-In the project directory, you can run:
+Technologies Used
+- React: A JavaScript library for building user interfaces.
+- CSS: Styling for the application.
+- SVG: Used for representing the robot's direction.
 
-### `npm start`
+robot-simulator/
+├── node_modules/
+├── public/
+│   ├── coordinate.png
+│   ├── east.svg
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo512.png
+│   ├── manifest.json
+│   ├── north.svg
+│   ├── robots.txt
+│   ├── south.svg
+│   ├── west.svg
+├── src/
+│   ├── App.js
+│   ├── App.test.js
+│   ├── App1.js
+│   ├── index.css
+│   ├── index.js
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Installation
+1. Clone the repository:
+git clone https://github.com/charlieKsw/robot-simulator.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to the project directory:
+cd robot-simulator
 
-### `npm test`
+3. Install the dependencies:
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Running the Application
+To start the development server, run:
+npm start
 
-### `npm run build`
+The application will be available at http://localhost:3000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Usage
+1. Buttons: Use the "Move Forward", "Rotate Left", and "Rotate Right" buttons to control the robot.
+2. Keyboard Controls: Use the arrow keys to move and rotate the robot:
+    - Arrow Up: Move forward and face North.
+    - Arrow Left: Move forward and face West.
+    - Arrow Right: Move forward and face East.
+    - Arrow Down: Move forward and face South.
